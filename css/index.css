@@ -1,0 +1,74 @@
+@import url("./style.css");
+
+/* pet de gif */
+.gifypet {
+    width: 327px;
+    margin: 0 auto;
+}
+
+.gifypet .iframe {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 100%;
+    margin-top: 5px;
+    height: 0;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+  
+.gifypet iframe {
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 300vw;
+    height: 300vh;
+    border: none;
+    align-items: center;
+}
+
+/* notas de atualizações */
+.updates {
+    overflow-y: scroll;
+    max-height: 200px;
+}
+
+/* webrings */
+.webring {
+    display: flex;
+    justify-content: center;
+}
+
+.webringbr {
+    background-color: #799c48;
+    border: 2px solid #c5d455;
+    color: #343a52;
+    text-align: center;
+}
+
+.webbr {
+    color: #b3e35b;
+}
+
+.webr {
+    color: #3c50ab;
+}
+
+.webr {
+    background-image: linear-gradient(to right, #3c50ab , #243069 , #7c8ede , #1d2859 , #1b34a1 , #1b34a1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 250%;
+    color: transparent;
+    -webkit-animation: rainbow 1s linear infinite both;
+    -moz-animation: rainbow 1s linear infinite both;
+    animation: rainbow 1s linear infinite both;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%
+    }
+    100% {
+        background-position: 100% 250%
+    }
+}

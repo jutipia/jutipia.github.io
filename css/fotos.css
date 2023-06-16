@@ -1,0 +1,61 @@
+@import url("./style.css");
+
+.fotoshoot-title {
+    text-align: center;
+}
+
+.fotoshoot {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fotoshoot-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.fotoshoot-column .foto {
+    width: 75%;
+}
+
+.foto {
+    width: 50%;
+    margin-top: 0.5rem;
+    transition: all 0.35s;
+}
+
+.foto:nth-of-type(4n+1) {
+    transform: scale(0.8, 0.8) rotate(5deg);
+}
+
+.foto:nth-of-type(4n+2) {
+    transform: scale(0.8, 0.8) rotate(-5deg);
+}
+
+.foto:nth-of-type(4n+4) {
+    transform: scale(0.8, 0.8) rotate(3deg);
+}
+
+.foto:nth-of-type(4n+3) {
+    transform: scale(0.8, 0.8) rotate(-3deg);
+}
+
+.foto:hover {
+    transform: scale(1, 1) rotate(0deg);
+    transition: all 0.25s;
+}
+
+.polaroid {
+    background: #fff;
+    padding: 3%;
+    box-shadow: 0 0.2rem 1.2rem #00000033;
+}
+  
+.polaroid > img {
+    max-width: 100%;
+    height: auto;
+}

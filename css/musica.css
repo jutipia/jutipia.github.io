@@ -1,0 +1,33 @@
+@import url("./style.css");
+
+.albuns-fav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+.albuns-fav img {
+    width: 100px;
+    height: 100px;
+}
+
+.albuns-fav figure {
+    margin: 0;
+    transition: .1s;
+}
+
+.albuns-fav figure:hover {
+    z-index: 1;
+    transform: scale(1.2);
+    background-color: transparent;
+    filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.2));
+}
+
+.albuns-fav figcaption {
+    color: var(--content-main);
+    font-size: 0.5em;
+    line-height: 1.5em;
+    margin: 0.5em 0em;
+}

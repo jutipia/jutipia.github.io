@@ -1,0 +1,51 @@
+@import url("./style.css");
+
+.blog-index {
+	border-collapse: separate;
+    width: 100%;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.blog-index td {
+	margin: 0;
+	padding: 4px;
+}
+
+.blog-index td:first-child {
+    width: 25%;
+}
+
+.blog-index td:first-child a {
+    text-decoration: none;
+    color: var(--content-main);
+}
+
+.blog-index tr:nth-child(odd) {
+	background: var(--inner-background);
+}
+
+.blog-info {
+    font-size: 75%;
+}
+
+.blog-end {
+    display: flex;
+    font-size: 60%;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+@media (max-width: 915px) {
+    .blog-table td:first-child {
+        width: 35%;
+    }    
+}
+
+@media (orientation: portrait), (max-width: 480px) {
+    .blog-table td:first-child {
+        width: 35%;
+    }    
+}
